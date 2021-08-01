@@ -2,6 +2,9 @@
 
 sudo cp http_get_cmd.py /usr/local/bin/
 sudo cp http_get_cmd.py.service /lib/systemd/system/
+
+sudo chmod +x /usr/local/bin/http_get_cmd.py
+
 sudo systemctl daemon-reload
 sudo systemctl enable http_get_cmd.py.service
 sudo systemctl start http_get_cmd.py.service
